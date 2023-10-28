@@ -1,0 +1,261 @@
+/* Box Model :- Used for design and layout in css. It consists of: margins, borders, padding and actual content.
+
+Content- Here, text and images appear.
+Padding- Clears an area around content and is transparent.
+Border- Goes around the padding and content.
+Margin- Clears an area outside the border.  */
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    /* CSS Web Safe Fonts W3Schools or CSS Font Stack */
+    /* fonts.google.com */
+}
+
+h1 {
+    color: #9e6105;
+    width: 100%;
+    margin: 30px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+    line-height: normal;
+    /* gives the distance between the upper and lower contents. */
+    display: inline-block;
+    /* 16px = 100% = 1em in font size */
+    /* 5.625rem doesn't get affected by the font size of body */
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 20px; */
+    font-weight: normal;
+    /* font-weight: normal; gives the thickness of the font */
+    color: #dc880a;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    color: red;
+}
+
+.footer-link {
+    color: red;
+}
+
+.pic {
+    padding-top: 10px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.top-container {
+    background-color: lightgoldenrodyellow;
+    /* border: solid 5px black ; */
+    width: 100%;
+    padding-top: 80px;
+    display: inline-block;
+
+}
+
+.middle-container {
+    /* background-color: blue; */
+    /* border: solid 5px black; */
+    width: 100%;
+}
+
+.contact-me {
+    /* background-color: violet; */
+    width: 50%;
+    display: inline-block;
+    height: 420px;
+}
+
+.bottom-container {
+    background-color: lightblue;
+    
+    /* border: solid 5px black; */
+    padding-top: 20px;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+}
+
+.profile {
+    width: 50%;
+    margin: 20px auto 30px auto;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 30px auto 30px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.com {
+    color: white;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.bn {
+    margin-top: 20px;
+}
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: underline;
+}
+
+hr {
+    border-style: dotted ;
+    border-bottom: none;
+    border-color: black;
+    border-width: 6px;
+    margin: 70px auto 70px auto;
+    width: 10%;
+}
+
+a {
+    margin: 10px 20px;
+}
+
+a:hover {
+    color: white;
+}
+/* https://css3buttongenerator.com/ */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-10px);
+    }
+
+    20% {
+        transform: translateX(10px);
+    }
+
+    30% {
+        transform: translateX(-10px);
+    }
+
+    40% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    60% {
+        transform: translateX(10px);
+    }
+
+    70% {
+        transform: translateX(-10px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    90% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* @keyframes shake defines a keyframe animation called "shake." It specifies a sequence of steps for the animation.
+The transform property is used to translate (move) the image horizontally along the X-axis to create a shaking effect.
+The shake-image class is used to apply the animation to an image element. The animation property specifies the "shake" animation with a duration of 0.5 seconds and an infinite iteration count, meaning it will repeat indefinitely. */
+
+.dev {
+    animation: shake 10s ease infinite;
+    float: right;
+    /* for text and images to allow them to "float" within the content flow, wrapping around the floated element. */
+    margin-left: 20px;
+    /* clear: left;
+    make sure left margin is clear and wrapped around. */
+}
+
+
+.w {
+    /* width: 25%; */
+    /* can also be used for controlling size of image. */
+    float: left;
+    margin-right: 30px;
+    animation: shake 10s ease infinite;
+}
+
+.l {
+    text-decoration: underline;
+}
+
+.hi {
+    text-decoration: underline;
+}
+
+.my {
+    text-decoration: underline;
+}
+
+.get {
+    text-decoration: underline;
+}
+
+.top {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.bot {
+    position: absolute;
+    right: 200px;
+}
+
+/* .code {
+    width: 25%;
+} */
+
+/* CSS 'display' property is used to control how HTML element is displayed on a web page.
+It determines the type of box that an element generates ( e.g. block-level or infinite ) and it interacts with other elements.
+Some common values used are:
+1. 'block': Takes up full width of their parent container & start new line. Ex. <div>,<p>,<h1>.
+2. 'inline' : Do not start on a new line & only occupy required space. Ex. <span>,<a>,<strong>.
+With inline elements, width cannot be changed, unlike in block elements.
+3. 'inline-block' : Combines aspects of both 'block' and 'inline', behaves as an inline element but allows you to set its width and height like block-level element.
+4. 'none' : Hides the element completely and makes it invisible.
+
+Best is to use display: inline-block. 
+For hiding : use display: none (doesn't take any space in layout) or visibility:hidden (still occupies space in the layout.) */
